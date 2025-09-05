@@ -1,0 +1,81 @@
+.student-dashboard {
+  padding: 80px 20px;
+  text-align: center;
+  min-height: 55vh;
+  background: linear-gradient(135deg, #8a4baf, #5d9cec);
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.student-dashboard h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.student-dashboard p {
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 50px;
+}
+
+.dashboard-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.dashboard-card {
+  background: #fff;
+  color: #333;
+  padding: 25px 20px;
+  border-radius: 15px;
+  width: 260px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.dashboard-card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #8a4baf;
+}
+
+.dashboard-card p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard-card {
+    width: 90%;
+  }
+
+  .student-dashboard h1 {
+    font-size: 28px;
+  }
+
+  .student-dashboard p {
+    font-size: 16px;
+  }
+}
