@@ -96,7 +96,7 @@ const CourseDescription = ({ user }) => {
             <div className="course-description">
               <div className="course-header">
                 <img
-                  src={`${server}/${course.image}`}
+                  src={`${server}/${course.image?.replace(/\\/g, '/')}`}
                   alt=""
                   className="course-image"
                 />
